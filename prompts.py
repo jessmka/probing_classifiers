@@ -103,7 +103,7 @@ class Prompts():
     }
     
 if __name__ == "__main__":
-    n = 1
+    n = 5
     list_of_dicts = []
     for race, gender in itertools.product(
         ["asian", "australian", "middle_eastern", "indigenous"],
