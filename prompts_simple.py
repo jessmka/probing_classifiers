@@ -58,7 +58,7 @@ class Prompts():
     }
     
 if __name__ == "__main__":
-    n = 1
+    n = 10000
     list_of_dicts = {}
     for race, gender in itertools.product(
         ["asian", "australian", "middle_eastern", "indigenous"],
@@ -76,7 +76,7 @@ if __name__ == "__main__":
             list_of_dicts[gender] = list_of_prompts
         # list_of_dicts.append({gender:list_of_prompts})
     # Specify the filename for your CSV
-    filename = "prompt_simple_output.json"
+    filename = f"prompt_simple_output_{n}.json"
 
     # Open the file in write mode ('w') with newline=''
     # newline='' is crucial to prevent extra blank rows in the CSV
